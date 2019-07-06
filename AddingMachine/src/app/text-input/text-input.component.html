@@ -1,3 +1,16 @@
 <pre>Output goes here. {{log}}</pre>
 <hr />
-<p>text-input goes here! You need to change this to a text input field.</p>
+<div>
+<input type = "text" name="inputText" placeholder="Enter input text here...">
+<button submit>Submit</button>
+</div>
+<div>
+    <input [(ngModel)]='number1' type="number" name="number1" placeholder="Enter number1">
+    <input [(ngModel)]='number2' type="number" name="number2" placeholder="Enter number2">
+    <br>
+    <button (click)='calculatorAdd()'>+</button>
+    <button (click)='calculatorSubtract()'>-</button>
+    <button (click)='calculatorMultiply()'>*</button>
+    <button (click)='calculatorDivide()'>/</button>
+    <h3>Result: {{result}}</h3>
+</div>
