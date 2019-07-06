@@ -1,9 +1,9 @@
-<pre>Output goes here. {{log}}</pre>
-<hr />
+<pre id="answer">Output Answer: {{answer}}</pre>
 <div>
-<input type = "text" name="inputText" placeholder="Enter input text here...">
-<button submit>Submit</button>
+<input id="input" #input (keyup.enter) ="doCalculations(input.value)" placeholder="Enter input text here..."/>
 </div>
+
+<hr />
 <div>
     <input [(ngModel)]='number1' type="number" name="number1" placeholder="Enter number1">
     <input [(ngModel)]='number2' type="number" name="number2" placeholder="Enter number2">
